@@ -3,54 +3,647 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Short Embed</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #000;
-            font-family: Arial, sans-serif;
-        }
-
-        .video-container {
-            position: relative;
-            width: 360px;
-            height: 640px;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(1.1);
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        @media (max-width: 768px) {
-            .video-container {
-                width: 100%;
-                max-width: 360px;
-                height: 640px;
-            }
-        }
-    </style>
+    <meta name="description" content="Precision Window Tint - Las Vegas's premier window tinting experts. Lifetime warranty, ceramic films, same-day service. 5000+ vehicles tinted.">
+    <title>Precision Window Tint | Las Vegas's Premier Window Tinting Experts</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="video-container">
-        <iframe
-            src="https://www.youtube.com/embed/vyIS4oZsxAQ?autoplay=1&mute=1&loop=1&playlist=vyIS4oZsxAQ&controls=1&modestbranding=1&rel=0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
-    </div>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>PRECISION WINDOW TINT</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-cta">
+                <a href="tel:7021234567" class="phone-btn">📞 (702) 123-4567</a>
+                <a href="#quote" class="btn-primary">Get Free Quote</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- BLOCK 1: Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Las Vegas's Premier Window Tinting Experts</h1>
+            <p class="hero-subtitle">Precision Craftsmanship. Lifetime Warranty. UV Protection You Can Trust.</p>
+            <div class="hero-cta">
+                <a href="#quote" class="btn-primary btn-large">Get Free Quote</a>
+                <a href="#gallery" class="btn-secondary btn-large">See Our Work</a>
+            </div>
+            <div class="hero-value-props">
+                <div class="value-prop">
+                    <span class="icon">✓</span>
+                    <span>Lifetime Warranty</span>
+                </div>
+                <div class="value-prop">
+                    <span class="icon">✓</span>
+                    <span>Ceramic Films Available</span>
+                </div>
+                <div class="value-prop">
+                    <span class="icon">✓</span>
+                    <span>Same-Day Service</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="arrow-down"></div>
+        </div>
+    </section>
+
+    <!-- BLOCK 2: Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <div class="trust-number">5000+</div>
+                    <div class="trust-label">Vehicles Tinted</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-number">15+</div>
+                    <div class="trust-label">Years Experience</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-number">A+</div>
+                    <div class="trust-label">BBB Rating</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-number">★★★★★</div>
+                    <div class="trust-label">500+ Reviews</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCK 3: Problem/Agitation -->
+    <section class="problem-section">
+        <div class="container">
+            <h2 class="section-title">Tired of These Common Issues?</h2>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">❌</div>
+                    <h3>Faded Interiors</h3>
+                    <p>UV rays damage your dashboard, seats, and upholstery, costing thousands in repairs</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">❌</div>
+                    <h3>Unbearable Heat</h3>
+                    <p>Las Vegas summers make your car a sauna, driving up AC costs and discomfort</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">❌</div>
+                    <h3>Lack of Privacy</h3>
+                    <p>Exposed valuables and no privacy for you and your family while driving</p>
+                </div>
+            </div>
+            <div class="solution-statement">
+                <p>Our professional-grade window tints <strong>block 99% UV rays</strong> and <strong>reduce heat by up to 60%</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCK 4: Services Overview -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2 class="section-title">Professional Tinting Services for Every Need</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🚗</div>
+                    <h3>Automotive Tinting</h3>
+                    <ul class="service-features">
+                        <li>Cars, trucks, SUVs</li>
+                        <li>Ceramic & carbon films</li>
+                        <li>Legal tint shades</li>
+                    </ul>
+                    <p class="service-price">Starting at $199</p>
+                    <a href="#quote" class="btn-outline">Learn More</a>
+                </div>
+                <div class="service-card featured">
+                    <div class="badge">Most Popular</div>
+                    <div class="service-icon">🏠</div>
+                    <h3>Residential Tinting</h3>
+                    <ul class="service-features">
+                        <li>Energy savings</li>
+                        <li>UV protection</li>
+                        <li>Enhanced privacy</li>
+                    </ul>
+                    <p class="service-price">Starting at $299</p>
+                    <a href="#quote" class="btn-primary">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Commercial Tinting</h3>
+                    <ul class="service-features">
+                        <li>Office buildings</li>
+                        <li>Storefronts</li>
+                        <li>Energy efficient</li>
+                    </ul>
+                    <p class="service-price">Custom Quote</p>
+                    <a href="#quote" class="btn-outline">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Paint Protection</h3>
+                    <ul class="service-features">
+                        <li>PPF installation</li>
+                        <li>Scratch resistance</li>
+                        <li>Clear bra</li>
+                    </ul>
+                    <p class="service-price">Starting at $599</p>
+                    <a href="#quote" class="btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCK 5: Why Choose Us -->
+    <section class="why-choose-section">
+        <div class="container">
+            <h2 class="section-title">Why Las Vegas Trusts Precision Window Tint</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏆</div>
+                    <h3>Lifetime Warranty</h3>
+                    <p>We stand behind our work with a manufacturer-backed lifetime warranty on all premium films</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Fast Turnaround</h3>
+                    <p>Most vehicles completed same-day. We value your time and schedule appointments around you</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎓</div>
+                    <h3>Certified Installers</h3>
+                    <p>Factory-trained technicians with 15+ years of professional experience</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💎</div>
+                    <h3>Premium Films</h3>
+                    <p>3M, Llumar, XPEL - Only the best brands in the industry for lasting quality</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Best Price Guarantee</h3>
+                    <p>We'll match any competitor's written quote. Premium quality at fair prices</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⭐</div>
+                    <h3>5-Star Reviews</h3>
+                    <p>Rated #1 on Google with 500+ five-star reviews from satisfied customers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCK 6: Before/After Gallery -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">See The Precision Difference</h2>
+            <p class="section-subtitle">Real vehicles. Real results.</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>Before/After 1</span>
+                        <p>Luxury Sedan - Ceramic Tint</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>Before/After 2</span>
+                        <p>SUV - Carbon Film</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>Before/After 3</span>
+                        <p>Truck - Premium Tint</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>Before/After 4</span>
+                        <p>Sports Car - Full Tint</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>Before/After 5</span>
+                        <p>Tesla - Ceramic Package</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>Before/After 6</span>
+                        <p>Commercial Van</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cta">
+                <a href="#contact" class="btn-outline">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCK 7: Testimonials -->
+    <section class="testimonials-section" id="reviews">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-carousel">
+                <div class="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Best tint job I've ever had. The team was professional, fast, and the quality is outstanding. You can really feel the heat reduction!"</p>
+                        <div class="testimonial-author">
+                            <strong>John D.</strong>
+                            <span>Las Vegas</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"I've used Precision for 3 of my vehicles now. Wouldn't trust anyone else. Great prices and even better service."</p>
+                        <div class="testimonial-author">
+                            <strong>Maria S.</strong>
+                            <span>Henderson</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Same day service on my Tesla Model 3. Looks factory and the ceramic tint keeps my car so much cooler!"</p>
+                        <div class="testimonial-author">
+                            <strong>David R.</strong>
+                            <span>Summerlin</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Lifetime warranty and amazing workmanship. They did my entire house and it's made a huge difference in our cooling costs."</p>
+                        <div class="testimonial-author">
+                            <strong>Sarah M.</strong>
+                            <span>Henderson</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-prev" aria-label="Previous">‹</button>
+                <button class="carousel-next" aria-label="Next">›</button>
+            </div>
+            <div class="review-badges">
+                <div class="badge-item">Google Reviews: ★★★★★</div>
+                <div class="badge-item">Yelp: ★★★★★</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCK 8: Process/How It Works -->
+    <section class="process-section">
+        <div class="container">
+            <h2 class="section-title">Simple, Fast, Professional Process</h2>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">📱</div>
+                    <h3>Get Quote</h3>
+                    <p>Call, text, or fill out our form for instant pricing</p>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">📅</div>
+                    <h3>Schedule</h3>
+                    <p>Choose a convenient time. Same-day available</p>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">🔧</div>
+                    <h3>Professional Install</h3>
+                    <p>Relax while our experts work their magic</p>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">✨</div>
+                    <h3>Enjoy</h3>
+                    <p>Drive away with lifetime warranty protection</p>
+                </div>
+            </div>
+            <div class="process-cta">
+                <a href="#quote" class="btn-primary btn-large">Start Your Project Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCK 9: Film Options -->
+    <section class="film-options-section">
+        <div class="container">
+            <h2 class="section-title">Choose Your Perfect Tint</h2>
+            <div class="pricing-table">
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Standard</h3>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">199</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><strong>35%</strong> Heat Rejection</li>
+                        <li><strong>99%</strong> UV Protection</li>
+                        <li><strong>5 Years</strong> Warranty</li>
+                        <li><strong>Good</strong> Glare Reduction</li>
+                        <li>✓ Color Stable</li>
+                    </ul>
+                    <a href="#quote" class="btn-outline">Book Now</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="badge">Most Popular</div>
+                    <h3 class="pricing-title">Premium</h3>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">299</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><strong>50%</strong> Heat Rejection</li>
+                        <li><strong>99%</strong> UV Protection</li>
+                        <li><strong>Lifetime</strong> Warranty</li>
+                        <li><strong>Better</strong> Glare Reduction</li>
+                        <li>✓ Color Stable</li>
+                    </ul>
+                    <a href="#quote" class="btn-primary">Book Now</a>
+                </div>
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Ceramic</h3>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">399</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><strong>65%</strong> Heat Rejection</li>
+                        <li><strong>99%</strong> UV Protection</li>
+                        <li><strong>Lifetime</strong> Warranty</li>
+                        <li><strong>Best</strong> Glare Reduction</li>
+                        <li>✓ Color Stable</li>
+                    </ul>
+                    <a href="#quote" class="btn-outline">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCK 10: Limited Time Offer -->
+    <section class="offer-section">
+        <div class="container">
+            <div class="offer-badge">🔥 LIMITED TIME OFFER 🔥</div>
+            <h2 class="offer-title">Save $100 on Ceramic Window Tint</h2>
+            <p class="offer-subtitle">Premium protection at unbeatable prices</p>
+            <div class="countdown-timer" id="countdown">
+                <div class="time-box">
+                    <span class="time-value" id="days">00</span>
+                    <span class="time-label">Days</span>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-box">
+                    <span class="time-value" id="hours">00</span>
+                    <span class="time-label">Hours</span>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-box">
+                    <span class="time-value" id="minutes">00</span>
+                    <span class="time-label">Minutes</span>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-box">
+                    <span class="time-value" id="seconds">00</span>
+                    <span class="time-label">Seconds</span>
+                </div>
+            </div>
+            <a href="#quote" class="btn-primary btn-large">Claim Your Discount Now</a>
+            <p class="offer-fine-print">*New customers only. Valid through December 31, 2025</p>
+        </div>
+    </section>
+
+    <!-- BLOCK 11: FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does installation take?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most vehicles are completed in 2-4 hours. We offer same-day service for standard installations. Larger vehicles or custom jobs may take longer, but we'll give you an accurate time estimate when you schedule.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is window tint legal in Nevada?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We ensure all tints meet Nevada's legal requirements. Nevada law allows 35% VLT on front side windows and any darkness on rear windows. We'll help you choose the perfect legal shade.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What's the difference between ceramic and regular tint?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ceramic tint blocks significantly more heat (up to 65% vs 35%), won't interfere with electronics or GPS, and offers superior clarity. While more expensive, it provides the best performance and comfort.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long before I can roll down windows?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We recommend waiting 2-5 days for the film to fully cure. This allows the adhesive to properly bond and prevents any peeling or bubbling. We'll provide detailed care instructions after installation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you offer mobile service?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We can come to your home or office for most installations. Mobile service is subject to availability and location. Contact us to schedule a mobile appointment.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What's included in the warranty?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our lifetime warranty covers bubbling, peeling, fading, discoloration, and adhesive failure for as long as you own the vehicle. This is backed by both our shop and the film manufacturer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCK 12: Contact/Quote Form -->
+    <section class="contact-section" id="quote">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get Your Free Quote</h2>
+                    <p>Fill out the form and we'll get back to you within 30 minutes during business hours.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <strong>Address</strong>
+                                <p>123 Industrial Rd<br>Las Vegas, NV 89109</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <strong>Phone</strong>
+                                <p><a href="tel:7021234567">(702) 123-4567</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">⏰</div>
+                            <div>
+                                <strong>Hours</strong>
+                                <p>Mon-Sat: 8AM-6PM<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <strong>Email</strong>
+                                <p><a href="mailto:info@precisionwindowtint.com">info@precisionwindowtint.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-icon" aria-label="YouTube">▶️</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="quoteForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Phone Number *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email Address *" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="service" required>
+                                <option value="">Select Service *</option>
+                                <option value="automotive">Automotive Tinting</option>
+                                <option value="residential">Residential Tinting</option>
+                                <option value="commercial">Commercial Tinting</option>
+                                <option value="ppf">Paint Protection Film</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="vehicle" placeholder="Vehicle Make/Model (if applicable)">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="4" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-large">Get Free Quote</button>
+                    </form>
+                    <div id="formSuccess" class="form-success" style="display: none;">
+                        <p>✓ Thank you! We'll contact you shortly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCK 13: Final CTA -->
+    <section class="final-cta-section" id="contact">
+        <div class="container">
+            <h2 class="final-cta-title">Ready to Upgrade Your Ride?</h2>
+            <p class="final-cta-subtitle">Join 5,000+ satisfied customers in Las Vegas</p>
+            <div class="final-cta-buttons">
+                <a href="tel:7021234567" class="btn-primary btn-large">📞 Get Free Quote</a>
+                <a href="sms:7021234567" class="btn-secondary btn-large">💬 Text Us Now</a>
+            </div>
+            <div class="trust-badges">
+                <div class="trust-badge">BBB Accredited</div>
+                <div class="trust-badge">Licensed & Insured</div>
+                <div class="trust-badge">Manufacturer Certified</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>PRECISION WINDOW TINT</h3>
+                    <p>Las Vegas's trusted window tinting experts since 2009. Quality, precision, and customer satisfaction guaranteed.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Automotive Tinting</a></li>
+                        <li><a href="#services">Residential Tinting</a></li>
+                        <li><a href="#services">Commercial Tinting</a></li>
+                        <li><a href="#services">Paint Protection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📍 123 Industrial Rd, Las Vegas, NV</li>
+                        <li>📞 <a href="tel:7021234567">(702) 123-4567</a></li>
+                        <li>✉️ <a href="mailto:info@precisionwindowtint.com">info@precisionwindowtint.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Precision Window Tint. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
