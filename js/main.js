@@ -384,6 +384,23 @@ function preventOrphans() {
 preventOrphans();
 
 // ===========================
+// MOBILE STICKY CALL BUTTON
+// ===========================
+const stickyCallBtn = document.getElementById('stickyCallBtn');
+const heroSection = document.getElementById('home');
+
+if (stickyCallBtn && heroSection) {
+    window.addEventListener('scroll', () => {
+        if (window.innerWidth <= 768) {
+            const heroBottom = heroSection.getBoundingClientRect().bottom;
+            stickyCallBtn.classList.toggle('visible', heroBottom < 0);
+        } else {
+            stickyCallBtn.classList.remove('visible');
+        }
+    });
+}
+
+// ===========================
 // INITIALIZE ALL FUNCTIONS
 // ===========================
 document.addEventListener('DOMContentLoaded', () => {

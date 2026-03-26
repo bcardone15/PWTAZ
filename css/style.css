@@ -321,6 +321,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ===========================
+   MOBILE APP LAUNCHER
+   =========================== */
+.mobile-launcher {
+    display: none;
+}
+
+.launcher-call-sticky {
+    display: none;
+}
+
+/* ===========================
    TRUST BAR
    =========================== */
 .trust-bar {
@@ -1395,6 +1406,187 @@ h1, h2, h3, h4, h5, h6 {
         flex-direction: column;
         align-items: stretch;
     }
+
+    /* --- Mobile App Launcher --- */
+    .hero-content,
+    .scroll-indicator {
+        display: none;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-top: 80px;
+        padding-bottom: 0;
+    }
+
+    .mobile-launcher {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        padding: 20px 20px 30px;
+        text-align: center;
+    }
+
+    .mobile-launcher-brand {
+        margin-bottom: 12px;
+    }
+
+    .mobile-launcher-title {
+        font-family: var(--font-heading);
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: var(--white);
+        letter-spacing: 1.5px;
+        margin-bottom: 4px;
+    }
+
+    .mobile-launcher-tagline {
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 0.9rem;
+    }
+
+    .mobile-launcher-trust {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        padding: 8px 20px;
+        border-radius: 20px;
+        margin-bottom: 24px;
+        color: var(--white);
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    .mobile-launcher-trust .trust-stars {
+        color: #ffd700;
+    }
+
+    .mobile-launcher-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        width: 100%;
+        max-width: 360px;
+        margin-bottom: 16px;
+    }
+
+    .launcher-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        padding: 18px 10px;
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.85rem;
+        transition: var(--transition);
+    }
+
+    .launcher-btn:active {
+        background: rgba(255, 255, 255, 0.25);
+        transform: scale(0.97);
+    }
+
+    .launcher-icon {
+        font-size: 1.6rem;
+    }
+
+    .launcher-actions {
+        display: flex;
+        gap: 12px;
+        width: 100%;
+        max-width: 360px;
+        margin-bottom: 12px;
+    }
+
+    .launcher-call-btn,
+    .launcher-text-btn {
+        flex: 1;
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1rem;
+        border-radius: 30px;
+        letter-spacing: 0.5px;
+        transition: var(--transition);
+    }
+
+    .launcher-call-btn {
+        background: var(--accent-orange);
+        color: var(--white);
+        box-shadow: 0 4px 20px rgba(255, 107, 53, 0.4);
+    }
+
+    .launcher-text-btn {
+        background: var(--primary-blue);
+        color: var(--white);
+        box-shadow: 0 4px 20px rgba(0, 166, 222, 0.4);
+    }
+
+    .launcher-call-btn:active,
+    .launcher-text-btn:active {
+        transform: scale(0.98);
+    }
+
+    .launcher-quote-btn {
+        display: block;
+        width: 100%;
+        max-width: 360px;
+        padding: 14px 24px;
+        background: transparent;
+        border: 2px solid var(--white);
+        color: var(--white);
+        text-decoration: none;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1rem;
+        border-radius: 30px;
+        letter-spacing: 0.5px;
+        transition: var(--transition);
+    }
+
+    .launcher-quote-btn:active {
+        background: rgba(255, 255, 255, 0.15);
+        transform: scale(0.98);
+    }
+
+    /* Sticky Call Button */
+    .launcher-call-sticky {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        display: none;
+        padding: 16px 24px;
+        background: var(--accent-orange);
+        color: var(--white);
+        text-decoration: none;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.05rem;
+        letter-spacing: 0.5px;
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .launcher-call-sticky.visible {
+        display: block;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1425,6 +1617,22 @@ h1, h2, h3, h4, h5, h6 {
 
     .contact-form {
         padding: 25px 20px;
+    }
+
+    .mobile-launcher-title {
+        font-size: 1.2rem;
+    }
+
+    .launcher-btn {
+        padding: 14px 8px;
+    }
+
+    .mobile-launcher-grid {
+        gap: 10px;
+    }
+
+    .launcher-actions {
+        gap: 10px;
     }
 }
 

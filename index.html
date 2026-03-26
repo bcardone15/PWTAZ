@@ -39,6 +39,40 @@
     <!-- BLOCK 1: Hero Section -->
     <section class="hero" id="home">
         <div class="hero-overlay"></div>
+        <!-- Mobile App Launcher (visible only on mobile via CSS) -->
+        <div class="mobile-launcher">
+            <div class="mobile-launcher-brand">
+                <h2 class="mobile-launcher-title">PRECISION WINDOW TINT</h2>
+                <p class="mobile-launcher-tagline">Las Vegas's Premier Window Tinting</p>
+            </div>
+            <div class="mobile-launcher-trust">
+                <span class="trust-stars">★★★★★</span>
+                <span class="trust-text">4.9 · 500+ Reviews</span>
+            </div>
+            <div class="mobile-launcher-grid">
+                <a href="https://maps.google.com/?q=Precision+Window+Tint+Las+Vegas" target="_blank" rel="noopener" class="launcher-btn">
+                    <span class="launcher-icon">📍</span>
+                    <span class="launcher-label">Maps</span>
+                </a>
+                <a href="#pricing" class="launcher-btn">
+                    <span class="launcher-icon">📋</span>
+                    <span class="launcher-label">Specs &amp; Pricing</span>
+                </a>
+                <a href="#gallery" class="launcher-btn">
+                    <span class="launcher-icon">🖼️</span>
+                    <span class="launcher-label">Gallery</span>
+                </a>
+                <a href="#reviews" class="launcher-btn">
+                    <span class="launcher-icon">⭐</span>
+                    <span class="launcher-label">Reviews</span>
+                </a>
+            </div>
+            <div class="launcher-actions">
+                <a href="tel:7021234567" class="launcher-call-btn">📞 Call</a>
+                <a href="sms:7021234567" class="launcher-text-btn">💬 Text</a>
+            </div>
+            <a href="#quote" class="launcher-quote-btn">⚡ Quick Quote</a>
+        </div>
         <div class="hero-content">
             <h1 class="hero-title">Las Vegas's Premier Window Tinting Experts</h1>
             <p class="hero-subtitle">Precision Craftsmanship. Lifetime Warranty. UV Protection You Can Trust.</p>
@@ -66,6 +100,9 @@
             <div class="arrow-down"></div>
         </div>
     </section>
+
+    <!-- Sticky Call Button (mobile only, shown on scroll via JS) -->
+    <a href="tel:7021234567" class="launcher-call-sticky" id="stickyCallBtn">📞 Call (702) 123-4567</a>
 
     <!-- BLOCK 2: Trust Bar -->
     <section class="trust-bar">
@@ -351,7 +388,7 @@
     </section>
 
     <!-- BLOCK 9: Film Options -->
-    <section class="film-options-section">
+    <section class="film-options-section" id="pricing">
         <div class="container">
             <h2 class="section-title">Choose Your Perfect Tint</h2>
             <div class="pricing-table">
