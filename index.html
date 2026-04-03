@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="Precision Window Tint - Las Vegas's premier window tinting experts. Lifetime warranty, ceramic films, same-day service. 5000+ vehicles tinted.">
     <title>Precision Window Tint | Las Vegas's Premier Window Tinting Experts</title>
     <link rel="stylesheet" href="css/style.css">
@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Skip Navigation -->
+    <a href="#home" class="skip-nav">Skip to main content</a>
+
     <!-- Navigation Header -->
     <header class="header">
         <nav class="nav-container">
@@ -301,7 +304,7 @@
     <section class="testimonials-section" id="reviews">
         <div class="container">
             <h2 class="section-title">What Our Customers Say</h2>
-            <div class="testimonials-carousel">
+            <div class="testimonials-carousel" aria-live="polite" aria-atomic="true">
                 <div class="testimonial-track">
                     <div class="testimonial-card">
                         <div class="stars">★★★★★</div>
@@ -583,13 +586,13 @@
                 <div class="contact-form">
                     <form id="quoteForm">
                         <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name *" required>
+                            <input type="text" name="name" placeholder="Your Name *" autocomplete="name" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" name="phone" placeholder="Phone Number *" required>
+                            <input type="tel" name="phone" placeholder="Phone Number *" autocomplete="tel" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" placeholder="Email Address *" required>
+                            <input type="email" name="email" placeholder="Email Address *" autocomplete="email" required>
                         </div>
                         <div class="form-group">
                             <select name="service" required>

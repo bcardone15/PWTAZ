@@ -19,7 +19,11 @@
     --light-gray: #f5f5f5;
     --medium-gray: #e0e0e0;
     --dark-gray: #333333;
+    --text-secondary: #666666;
     --black: #1a1a1a;
+
+    /* Accent */
+    --gold: #ffd700;
 
     /* Typography */
     --font-primary: 'DM Sans', sans-serif;
@@ -29,13 +33,40 @@
     --section-padding: 80px 20px;
     --container-max: 1200px;
 
+    /* Border Radius */
+    --radius-sm: 10px;
+    --radius-md: 15px;
+    --radius-lg: 20px;
+    --radius-pill: 30px;
+
     /* Shadows */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
     --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
+    --shadow-orange: 0 4px 20px rgba(255, 107, 53, 0.4);
+    --shadow-blue: 0 4px 20px rgba(0, 166, 222, 0.4);
 
     /* Transitions */
-    --transition: all 0.3s ease;
+    --transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+/* Skip Navigation (accessibility) */
+.skip-nav {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--dark-navy);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: var(--radius-sm);
+    z-index: 10000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.skip-nav:focus {
+    top: 10px;
 }
 
 html {
@@ -75,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
 .section-subtitle {
     text-align: center;
     font-size: 1.1rem;
-    color: #666;
+    color: var(--text-secondary);
     margin-bottom: 3rem;
 }
 
@@ -87,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-outline {
     display: inline-block;
     padding: 14px 32px;
-    border-radius: 30px;
+    border-radius: var(--radius-pill);
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
@@ -360,7 +391,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .trust-label {
     font-size: 0.95rem;
-    color: #666;
+    color: var(--text-secondary);
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -383,7 +414,7 @@ h1, h2, h3, h4, h5, h6 {
 .problem-card {
     background: var(--white);
     padding: 40px 30px;
-    border-radius: 15px;
+    border-radius: var(--radius-md);
     text-align: center;
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
@@ -406,7 +437,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .problem-card p {
-    color: #666;
+    color: var(--text-secondary);
     line-height: 1.6;
 }
 
@@ -415,7 +446,7 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--primary-blue);
     color: var(--white);
     padding: 30px;
-    border-radius: 15px;
+    border-radius: var(--radius-md);
     font-size: 1.2rem;
 }
 
@@ -441,7 +472,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     background: var(--white);
     border: 2px solid var(--medium-gray);
-    border-radius: 15px;
+    border-radius: var(--radius-md);
     padding: 40px 30px;
     text-align: center;
     transition: var(--transition);
@@ -471,7 +502,7 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--accent-orange);
     color: var(--white);
     padding: 8px 20px;
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
     font-size: 0.85rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -495,7 +526,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .service-features li {
     padding: 8px 0;
-    color: #666;
+    color: var(--text-secondary);
 }
 
 .service-card.featured .service-features li {
@@ -526,7 +557,7 @@ h1, h2, h3, h4, h5, h6 {
 .benefit-card {
     background: var(--white);
     padding: 35px 30px;
-    border-radius: 15px;
+    border-radius: var(--radius-md);
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
 }
@@ -548,7 +579,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .benefit-card p {
-    color: #666;
+    color: var(--text-secondary);
     line-height: 1.7;
 }
 
@@ -568,7 +599,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gallery-item {
-    border-radius: 15px;
+    border-radius: var(--radius-md);
     overflow: hidden;
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
@@ -598,7 +629,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gallery-placeholder p {
-    color: #666;
+    color: var(--text-secondary);
 }
 
 .gallery-cta {
@@ -633,7 +664,7 @@ h1, h2, h3, h4, h5, h6 {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     padding: 35px 30px;
-    border-radius: 15px;
+    border-radius: var(--radius-md);
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -702,7 +733,7 @@ h1, h2, h3, h4, h5, h6 {
 .badge-item {
     padding: 10px 20px;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
     font-weight: 600;
 }
 
@@ -731,7 +762,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     padding: 30px 20px;
     background: var(--white);
-    border-radius: 15px;
+    border-radius: var(--radius-md);
     box-shadow: var(--shadow-sm);
 }
 
@@ -764,7 +795,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .process-step p {
-    color: #666;
+    color: var(--text-secondary);
     font-size: 0.95rem;
 }
 
@@ -798,7 +829,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     background: var(--white);
     border: 2px solid var(--medium-gray);
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
     padding: 40px 30px;
     text-align: center;
     transition: var(--transition);
@@ -864,7 +895,7 @@ h1, h2, h3, h4, h5, h6 {
 .pricing-features li {
     padding: 12px 0;
     border-bottom: 1px solid var(--medium-gray);
-    color: #666;
+    color: var(--text-secondary);
 }
 
 .pricing-card.featured .pricing-features li {
@@ -889,7 +920,7 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     background: rgba(0, 0, 0, 0.2);
     padding: 10px 25px;
-    border-radius: 30px;
+    border-radius: var(--radius-pill);
     font-weight: 700;
     font-size: 1.1rem;
     margin-bottom: 20px;
@@ -920,7 +951,7 @@ h1, h2, h3, h4, h5, h6 {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     padding: 20px 25px;
-    border-radius: 15px;
+    border-radius: var(--radius-md);
     min-width: 100px;
 }
 
@@ -968,7 +999,7 @@ h1, h2, h3, h4, h5, h6 {
 .faq-item {
     background: var(--white);
     margin-bottom: 15px;
-    border-radius: 10px;
+    border-radius: var(--radius-sm);
     overflow: hidden;
     box-shadow: var(--shadow-sm);
 }
@@ -1015,7 +1046,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .faq-answer p {
     padding: 0 30px 25px;
-    color: #666;
+    color: var(--text-secondary);
     line-height: 1.7;
 }
 
@@ -1042,7 +1073,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-info > p {
     font-size: 1.1rem;
-    color: #666;
+    color: var(--text-secondary);
     margin-bottom: 40px;
 }
 
@@ -1069,7 +1100,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-item p {
-    color: #666;
+    color: var(--text-secondary);
     line-height: 1.6;
 }
 
@@ -1100,7 +1131,7 @@ h1, h2, h3, h4, h5, h6 {
 .contact-form {
     background: var(--light-gray);
     padding: 40px;
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
 }
 
@@ -1114,7 +1145,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     padding: 15px 20px;
     border: 2px solid var(--medium-gray);
-    border-radius: 10px;
+    border-radius: var(--radius-sm);
     font-size: 1rem;
     font-family: var(--font-primary);
     transition: var(--transition);
@@ -1135,7 +1166,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #4caf50;
     color: var(--white);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: var(--radius-sm);
     text-align: center;
     font-weight: 600;
     margin-top: 20px;
@@ -1182,7 +1213,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 12px 25px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
-    border-radius: 25px;
+    border-radius: var(--radius-lg);
     font-weight: 600;
     font-size: 0.95rem;
 }
@@ -1435,7 +1466,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .mobile-launcher-title {
-        font-family: var(--font-heading);
+        font-family: var(--font-accent);
         font-size: 1.4rem;
         font-weight: 700;
         color: var(--white);
@@ -1456,7 +1487,7 @@ h1, h2, h3, h4, h5, h6 {
         backdrop-filter: blur(6px);
         -webkit-backdrop-filter: blur(6px);
         padding: 8px 20px;
-        border-radius: 20px;
+        border-radius: var(--radius-lg);
         margin-bottom: 24px;
         color: var(--white);
         font-size: 0.9rem;
@@ -1464,7 +1495,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .mobile-launcher-trust .trust-stars {
-        color: #ffd700;
+        color: var(--gold);
     }
 
     .mobile-launcher-grid {
@@ -1487,7 +1518,7 @@ h1, h2, h3, h4, h5, h6 {
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
         border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 16px;
+        border-radius: var(--radius-md);
         color: var(--white);
         text-decoration: none;
         font-weight: 600;
@@ -1521,7 +1552,7 @@ h1, h2, h3, h4, h5, h6 {
         text-align: center;
         font-weight: 700;
         font-size: 1rem;
-        border-radius: 30px;
+        border-radius: var(--radius-pill);
         letter-spacing: 0.5px;
         transition: var(--transition);
     }
@@ -1529,13 +1560,13 @@ h1, h2, h3, h4, h5, h6 {
     .launcher-call-btn {
         background: var(--accent-orange);
         color: var(--white);
-        box-shadow: 0 4px 20px rgba(255, 107, 53, 0.4);
+        box-shadow: var(--shadow-orange);
     }
 
     .launcher-text-btn {
         background: var(--primary-blue);
         color: var(--white);
-        box-shadow: 0 4px 20px rgba(0, 166, 222, 0.4);
+        box-shadow: var(--shadow-blue);
     }
 
     .launcher-call-btn:active,
@@ -1555,7 +1586,7 @@ h1, h2, h3, h4, h5, h6 {
         text-align: center;
         font-weight: 700;
         font-size: 1rem;
-        border-radius: 30px;
+        border-radius: var(--radius-pill);
         letter-spacing: 0.5px;
         transition: var(--transition);
     }
@@ -1574,6 +1605,7 @@ h1, h2, h3, h4, h5, h6 {
         z-index: 999;
         display: none;
         padding: 16px 24px;
+        padding-bottom: max(16px, env(safe-area-inset-bottom));
         background: var(--accent-orange);
         color: var(--white);
         text-decoration: none;
@@ -1581,7 +1613,7 @@ h1, h2, h3, h4, h5, h6 {
         font-weight: 700;
         font-size: 1.05rem;
         letter-spacing: 0.5px;
-        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+        box-shadow: var(--shadow-md);
     }
 
     .launcher-call-sticky.visible {

@@ -36,6 +36,15 @@ if (mobileMenuToggle) {
         navLinks.classList.toggle('active');
         navCta.classList.toggle('active');
     });
+
+    // Close mobile menu when a nav link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenuToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+            navCta.classList.remove('active');
+        });
+    });
 }
 
 // ===========================
@@ -54,7 +63,7 @@ window.addEventListener('scroll', () => {
     }
 
     lastScroll = currentScroll;
-});
+}, { passive: true });
 
 // ===========================
 // COUNTDOWN TIMER
@@ -184,7 +193,7 @@ window.addEventListener('scroll', () => {
     } else {
         backToTopBtn.classList.remove('visible');
     }
-});
+}, { passive: true });
 
 backToTopBtn.addEventListener('click', () => {
     window.scrollTo({
@@ -397,7 +406,7 @@ if (stickyCallBtn && heroSection) {
         } else {
             stickyCallBtn.classList.remove('visible');
         }
-    });
+    }, { passive: true });
 }
 
 // ===========================
